@@ -1,0 +1,36 @@
+<% layout("/layouts/boilerplate")-%>
+
+  <body class="bg-light">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="card-title text-center mb-4">Profile Details</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <strong>Username:</strong>
+                  <%=user.username%>
+                </li>
+                <li class="list-group-item">
+                  <strong>Email:</strong>
+                  <%=user.email%>
+                </li>
+                <li class="list-group-item">
+                  <strong>Phone:</strong>
+                  <%=user.phno%>
+                </li>
+                <li class="list-group-item">
+                  <strong>Flat No:</strong>
+                  <%=user.flatno%>
+                </li>
+              </ul>
+              <div class="text-center mt-4">
+                <a href="/user/<%=user._id%>/edit" class="btn btn-primary">Edit Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>

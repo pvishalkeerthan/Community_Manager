@@ -1,0 +1,35 @@
+<% layout("/layouts/boilerplate")-%>
+<body class="bg-light">
+    <style>
+        .card-img-top {
+            height: 200px; /* Set a fixed height for the images */
+            object-fit: contain; /* Ensure the entire image fits within the container */
+        }
+    </style>
+    <div class="container py-5">
+        <div class="row justify-content-center mb-4">
+            <div class="col text-center">
+                <h3 class="mb-0">My Communities</h3>
+            </div>
+        </div>
+        <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1 g-4">
+            <% for(let community of joinedCommunities) { %>
+            <div class="col">
+                <a href="/community/<%= community._id %>" class="text-decoration-none">
+                    <div class="card border-0 shadow h-100">
+                        <img src="<%= community.image %>" class="card-img-top" alt="community_image">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3"><%= community.name %></h5>
+                            <p class="card-text text-muted"><%= community.description %></p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="bi bi-people-fill pe-2"></i>Residents: <%= community.resident.length %></li>
+                                <li><i class="bi bi-geo-alt-fill pe-2"></i><%= community.country %>, <%= community.location %></li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <% } %>
+        </div>
+    </div>
+</body>

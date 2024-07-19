@@ -1,0 +1,97 @@
+.body{
+    display: flex;
+    place-items: center;
+    gap:5px;
+    flex-direction: row;
+    justify-content: end;
+    background:#216ce7;
+    color:white;
+}
+.loginheading{
+    margin-left: 560px;
+}.card{
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+    width: 94%;
+    margin: 0 120px;
+    padding: 111px 30px 54px;
+    border-radius: 24px;
+    font-family: "Open sans";
+    text-align: center;
+
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top:-880px;
+    left: 50%;
+    translate: -50% 0;
+    width:1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background:#216ce7;
+}
+.card{
+    position: absolute;
+    top:100px;
+    left: 40%;
+    translate: -50% 0;
+    width: 500px;
+    height: 500px;
+}
+.needs-validation{
+    margin-bottom: 100px;
+    display: grid;
+    gap: 12px;
+}
+.needs-validation
+:is(input,button){
+    width: 100%;
+    height: 35px;
+    border-radius: 28px;
+    font-size: 15px;
+    font-family: inherit;
+}
+.needs-validation > input{
+    border: 0;
+    padding: 0 27px;
+    background:white;
+}
+#username:hover{
+    border-radius: 0;
+    box-shadow: 1px 2px 7px #226ce7;
+}
+#password:hover{
+    border-radius: 0;
+    box-shadow: 1px 2px 7px #226ce7;
+}
+#email:hover{
+    border-radius: 0;
+    box-shadow: 1px 2px 7px #226ce7;
+}
+#phno:hover{
+    border-radius: 0;
+    box-shadow: 1px 2px 7px #226ce7;
+}
+.email{
+    margin-right: 11px;
+}
+.needs-validation >button{
+    border: 0;
+    color:#ffffff;
+    background :#226ce7;
+
+}
+.card>p{
+    color:#a1a1a1;
+}
+.form-label{
+    margin-right: 360px;
+}
+.btn:hover{
+    z-index: 1;
+    border-color: transparent;
+    background:green;
+    color:white;
+}

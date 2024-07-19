@@ -1,0 +1,47 @@
+<% layout("/layouts/boilerplate")-%>
+<body>
+    <div class="row mt-4 mb-2">
+        <div class="col-8 offset-2">
+            <h3>Add new Community </h3>
+    <form method="POST" action="/community" class="needs-validation" novalidate >
+        <div class="mb-3">
+            <lable for="name" class="form-label">Name</lable>
+        <input name="name" placeholder="Add a name of the community" type="text" class="form-control" required >
+        <div class="valid-feedback">Looks good!</div>
+        <div class="invalid-feedback">Name is neccessary</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="description" placeholder="Describe your place" class="form-control" required></textarea>
+            <div class="invalid-feedback">Enter description before creating</div>
+
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload Image</label>
+            <input name="image" type="text" class="form-control">
+
+        </div>
+        <div class="row">
+            
+            <div class="mb-3 col-md-8">
+                <label for="country" class="form-label">Country</label>
+                <input name="country" placeholder="Enter Country" type="text" class="form-control" required>
+                <div class="invalid-feedback">Enter a valid country</div>
+               </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input name="location" placeholder="Enter city" type="text" class="form-control" required>
+            <div class="invalid-feedback">Enter a valid city</div>
+        </div>
+       
+       
+        <button class="btn btn-dark add-btn">Add Community</button>
+    </form>
+        </div>
+        
+    </div>
+    
+</body>

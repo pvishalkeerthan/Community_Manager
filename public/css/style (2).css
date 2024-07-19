@@ -1,0 +1,314 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    padding: 100px 0;
+    text-align: center;
+}
+.header__right img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the entire container, preserving aspect ratio */
+    object-position: center; /* Center the image horizontally and vertically */
+}
+.header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Categories */
+.categories {
+    background: var(--color-bg1);
+    height: 30rem;
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.categories_container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap:4rem;
+}
+
+.categories_left {
+    margin-right: 4rem;
+}
+
+.categories_left p {
+    margin: 1rem 0 3rem;
+}
+
+.categories_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.category {
+    background: var(--color-bg2);
+    border-radius: 2rem;
+    padding: 1.2rem;
+    transition: var(--transition);
+}
+
+.category:nth-child(2) .category_icon {
+    background: var(--color-danger);
+}
+
+.category:nth-child(3) .category_icon {
+    background: var(--color-success);
+}
+
+.category:nth-child(4) .category_icon {
+    background: var(--color-warning);
+}
+
+.category:nth-child(5) .category_icon {
+    background: var(--color-success);
+}
+
+.category:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+
+.category_icon {
+    background: var(--color-primary);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.category h5 {
+    margin: 2rem 0 0.85rem;
+}
+
+.category p {
+    font-size: 0.85rem;
+}
+/* Testimonial */
+.testimonial {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.testimonial h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__left,
+.footer__center,
+.footer__right {
+    flex: 1;
+}
+
+.footer__logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer__description {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer__social-icons {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.footer__social-icons .social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer__social-icons .social-icon:last-child {
+    margin-right: 0;
+}
+
+.footer__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer__links,
+.footer__contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__links li,
+.footer__contact li {
+    margin-bottom: 10px;
+}
+
+.footer__links li:last-child,
+.footer__contact li:last-child {
+    margin-bottom: 0;
+}
+
+.footer__contact i {
+    margin-right: 10px;
+}
+
+/*============*/
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    transition: color 0.3s;
+}
+
+.card:hover .card-title {
+    color: #0069d9;
+}
+
+.card-text {
+    transition: color 0.3s;
+}
+
+.card:hover .card-text {
+    color: #555;
+}
+
+/*============show.ejs============*/
+
+/* Main Container */
+.row {
+    margin-top: 30px;
+}
+/* Community Name */
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; 
+}
+.card-img-top {
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Set a fixed height for the image */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+
+
+/* Residents Section */
+.resident-list {
+    margin-top: 30px; /* Add spacing from above elements */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.resident-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Add border between residents */
+}
+
+/* Chat Section */
+.chat-box {
+    margin-top: 30px; /* Add spacing from above elements */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    height: 300px; /* Set a fixed height */
+    overflow-y: auto; /* Enable scrolling */
+}
+
+.message {
+    margin-bottom: 10px; /* Add spacing between messages */
+}
+
+.username {
+    font-weight: bold; /* Bold username */
+    color: #333; /* Dark text color */
+}
+
+.content {
+    margin-top: 5px; /* Add spacing between username and message content */
+    color: #555; /* Text color */
+}
+
+/* Text Box for Chat */
+.input-group {
+    margin-top: 20px; /* Add spacing from chat box */
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: calc(100% - 100px); /* Adjust width */
+    height: 60px; /* Set a fixed height */
+    resize: none; /* Disable resizing */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ddd; /* Add border */
+}
+
+/* Send Button */
+.send-button {
+    width: 100px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff; /* White text color */
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #0056b3; 
+}
