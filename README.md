@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Community Manager</h1>
 
-<p align="center"><img src="https://socialify.git.ci/YadlaMani/CM/image?font=Bitter&amp;language=1&amp;name=1&amp;owner=1&amp;pattern=Brick%20Wall&amp;stargazers=1&amp;theme=Dark" alt="project-image"></p>
+![Community_Manager](https://socialify.git.ci/pvishalkeerthan/Community_Manager/image?font=KoHo&language=1&name=1&owner=1&pattern=Signal&stargazers=1&theme=Light)
 
 <p id="description">Introducing a dynamic platform tailored for community collaboration and seamless communication. Our website serves as a centralized hub for managing community members facilitating announcements and fostering interaction through secure reporting and chat functionalities. With user-friendly navigation and intuitive design staying connected and informed has never been easier.</p>
 
