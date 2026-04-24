@@ -115,25 +115,3 @@ Community Manager is more than just a registry; it is a **centralized ecosystem*
 
 Once running, access the portal at [http://localhost:3000](http://localhost:3000).
 
----
-
-## 🤝 Contribution Gateway
-
-We believe in the power of open communities. To contribute:
-1. **Fork** the repository.
-2. **Create** a descriptive feature branch.
-3. **Commit** your changes with clear logic.
-4. **Push** and initiate a **Pull Request**.
-
----
-
-## 📜 License
-
-Project distributed under the **ISC License**. Reference `LICENSE` for comprehensive legal terms.
-
----
-
-<p align="center">
-  <b>Built for the future of community living.</b><br/>
-  <sub>Created with ❤️ for better, more connected communities.</sub>
-</p>
